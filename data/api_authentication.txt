@@ -1,0 +1,9 @@
+API Authentication Guide
+
+API requests require a valid bearer token.
+
+Include the token in the Authorization header.
+
+A 401 Unauthorized error usually indicates an invalid or expired token.
+
+Generate a new token from the developer dashboard.

@@ -1,0 +1,9 @@
+Billing Policy
+
+Billing charges are processed monthly.
+
+Invoices are available in the billing section.
+
+Refund requests must be reviewed by the billing team.
+
+Billing issues are escalated to human support.

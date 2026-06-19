@@ -1,0 +1,13 @@
+Subscription Plan Information
+
+Users can choose from Basic, Professional, and Enterprise plans.
+
+Each plan includes different usage limits and features.
+
+Subscriptions can be upgraded at any time.
+
+Plan changes take effect immediately after payment confirmation.
+
+Downgrades are applied at the next billing cycle.
+
+Enterprise customers receive priority support and advanced features.

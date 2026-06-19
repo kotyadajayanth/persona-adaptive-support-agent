@@ -1,0 +1,13 @@
+Payment Failure Support
+
+Payment failures can occur because of insufficient funds, expired cards, or network issues.
+
+Verify that the payment card is active and has sufficient balance.
+
+Check that the card details are entered correctly.
+
+Wait a few minutes and retry the transaction.
+
+If the payment still fails, contact the bank or payment provider.
+
+Repeated payment failures should be escalated to support.

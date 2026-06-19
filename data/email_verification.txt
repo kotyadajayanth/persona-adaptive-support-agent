@@ -1,0 +1,13 @@
+Email Verification Guide
+
+New users must verify their email address before accessing all features.
+
+A verification email is sent during registration.
+
+Open the email and click the verification link.
+
+If the email is not received, check the spam folder.
+
+Users can request a new verification email from account settings.
+
+Verification links expire after 24 hours.

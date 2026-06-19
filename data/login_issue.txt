@@ -1,0 +1,13 @@
+Login Issue Guide
+
+Users may experience login issues due to incorrect credentials, expired passwords, or browser problems.
+
+First, verify that the email address and password are entered correctly.
+
+If the password is forgotten, use the password reset option.
+
+Clear browser cache and cookies before trying again.
+
+Try using a different browser or device.
+
+If the issue continues, contact support for further assistance.

@@ -1,0 +1,17 @@
+API Troubleshooting Guide
+
+API errors may occur because of invalid tokens, incorrect endpoints, or rate limits.
+
+Verify the API key and authentication token.
+
+Check request headers and payload format.
+
+Review API logs for detailed error messages.
+
+A 401 error indicates authentication failure.
+
+A 403 error indicates insufficient permissions.
+
+A 429 error indicates rate limit exceeded.
+
+Developers should review documentation before contacting support.

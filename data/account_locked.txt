@@ -1,0 +1,9 @@
+Account Locked Support
+
+An account may be locked after multiple failed login attempts.
+
+Wait 15 minutes before trying again.
+
+Users can unlock their account using the account recovery page.
+
+If the issue continues, contact support.

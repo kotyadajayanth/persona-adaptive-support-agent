@@ -1,0 +1,13 @@
+Browser Cache Troubleshooting
+
+Cached files may cause loading issues or outdated content.
+
+Open browser settings and locate the clear browsing data option.
+
+Clear cache and cookies.
+
+Restart the browser and sign in again.
+
+If problems continue, try an incognito window or another browser.
+
+Keeping the browser updated can prevent compatibility issues.
