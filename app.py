@@ -2,9 +2,12 @@ import streamlit as st
 
 from src.classifier import detect_persona
 from src.rag import get_context
+from src.rag import load_documents
 from src.generator import generate_response
 from src.escalation import should_escalate
 from src.escalation import generate_handoff
+
+load_documents()
 
 st.title("Persona Adaptive Customer Support Agent")
 

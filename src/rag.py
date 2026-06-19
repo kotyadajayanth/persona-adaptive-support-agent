@@ -35,9 +35,23 @@ def load_documents():
 
     folder = "data"
 
+    existing_ids = set()
+
+    try:
+        data = collection.get()
+
+        if "ids" in data:
+            existing_ids = set(data["ids"])
+
+    except:
+        pass
+
     for file_name in os.listdir(folder):
 
         if not file_name.endswith(".txt"):
+            continue
+
+        if file_name in existing_ids:
             continue
 
         file_path = os.path.join(folder, file_name)
@@ -46,20 +60,16 @@ def load_documents():
 
             text = file.read().strip()
 
-            print("\nProcessing:", file_name)
-            print("Length:", len(text))
-
             if len(text) == 0:
-                print("Skipped Empty File")
                 continue
 
             embedding = get_embedding(text)
 
             if embedding is None:
-                print("Embedding Failed")
                 continue
 
             try:
+
                 collection.add(
                     ids=[file_name],
                     documents=[text],
@@ -71,12 +81,8 @@ def load_documents():
                     ]
                 )
 
-                print("Added Successfully")
-
-            except Exception as e:
-                print("Skipped:", e)
-
-    print("\nDocument Loading Completed")
+            except Exception:
+                pass
 
 
 def search_documents(query):
@@ -91,26 +97,31 @@ def search_documents(query):
     return results
 
 
-if __name__ == "__main__":
-
-    load_documents()
-
-    print("\nSearching...\n")
-
-    result = search_documents(
-        "How can I reset my password?"
-    )
-
-    print(result)
 def get_context(query):
 
     results = search_documents(query)
 
+    if (
+        len(results["documents"]) == 0
+        or len(results["documents"][0]) == 0
+    ):
+
+        load_documents()
+
+        results = search_documents(query)
+
+    if (
+        len(results["documents"]) == 0
+        or len(results["documents"][0]) == 0
+    ):
+
+        return "", [], 0
+
     documents = results["documents"][0]
 
-    sources = []
-
     context = ""
+
+    sources = []
 
     for doc in documents:
 
@@ -120,6 +131,23 @@ def get_context(query):
 
         sources.append(item["source"])
 
-    score = 1 - results["distances"][0][0]
+    if (
+        len(results["distances"]) == 0
+        or len(results["distances"][0]) == 0
+    ):
+        score = 0
+    else:
+        score = 1 - results["distances"][0][0]
 
     return context, sources, score
+
+
+if __name__ == "__main__":
+
+    load_documents()
+
+    result = search_documents(
+        "How can I reset my password?"
+    )
+
+    print(result)
