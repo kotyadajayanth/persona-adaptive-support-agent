@@ -1,4 +1,5 @@
 streamlit
 google-genai
-chromadb
+chromadb==0.5.5
 python-dotenv
+protobuf==5.29.5
