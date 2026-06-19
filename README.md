@@ -1,5 +1,37 @@
 # Persona Adaptive Customer Support Agent
 
+AI-powered customer support agent using Gemini, ChromaDB, RAG, persona detection, and human escalation workflows.
+
+## Live Demo
+
+Streamlit Application:
+
+https://persona-adaptive-support-agent-gvzc5atl2aooski82a7jwb.streamlit.app/
+
+## GitHub Repository
+
+https://github.com/kotyadajayanth/persona-adaptive-support-agent
+
+## Features
+
+* Persona Detection
+
+  * Technical Expert
+  * Frustrated User
+  * Business Executive
+
+* Retrieval Augmented Generation (RAG)
+
+* ChromaDB Vector Database
+
+* Gemini-based Response Generation
+
+* Human Escalation Workflow
+
+* Handoff Summary Generation
+
+* Streamlit User Interface
+
 ## Project Overview
 
 This project is an AI-powered customer support agent that adapts its responses based on customer personas. The system uses Retrieval Augmented Generation (RAG) to retrieve relevant information from a support knowledge base and generates persona-specific responses using Gemini.
