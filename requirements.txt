@@ -2,5 +2,3 @@ streamlit
 google-genai
 chromadb
 python-dotenv
-pypdf
-langchain
